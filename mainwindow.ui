@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>879</width>
+    <height>462</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,31 +17,49 @@
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
      <widget class="QTableView" name="tableView">
+      <property name="maximumSize">
+       <size>
+        <width>400</width>
+        <height>400</height>
+       </size>
+      </property>
       <attribute name="horizontalHeaderMinimumSectionSize">
-       <number>3</number>
+       <number>40</number>
       </attribute>
       <attribute name="horizontalHeaderDefaultSectionSize">
-       <number>3</number>
+       <number>40</number>
       </attribute>
       <attribute name="verticalHeaderMinimumSectionSize">
-       <number>3</number>
+       <number>40</number>
       </attribute>
       <attribute name="verticalHeaderDefaultSectionSize">
-       <number>3</number>
+       <number>40</number>
+      </attribute>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTableView" name="tableView_2">
+      <property name="maximumSize">
+       <size>
+        <width>400</width>
+        <height>400</height>
+       </size>
+      </property>
+      <attribute name="horizontalHeaderMinimumSectionSize">
+       <number>40</number>
+      </attribute>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>43</number>
+      </attribute>
+      <attribute name="verticalHeaderMinimumSectionSize">
+       <number>40</number>
+      </attribute>
+      <attribute name="verticalHeaderDefaultSectionSize">
+       <number>40</number>
       </attribute>
      </widget>
     </item>
    </layout>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>800</width>
-     <height>25</height>
-    </rect>
-   </property>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionLoad">
@@ -50,6 +68,9 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+O</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::NoRole</enum>
    </property>
   </action>
   <action name="actionSave">
